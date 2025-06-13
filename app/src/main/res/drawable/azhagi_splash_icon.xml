@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Simple keyboard key animation -->
+    <group android:name="keyboard_icon">
+        <!-- Background circle -->
+        <path
+            android:pathData="M54,54m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"
+            android:fillColor="#FF2196F3"/>
+        
+        <!-- Keyboard keys representation -->
+        <path
+            android:pathData="M42,45h6v4h-6zM50,45h6v4h-6zM58,45h6v4h-6z"
+            android:fillColor="#FFFFFF"/>
+        <path
+            android:pathData="M42,52h6v4h-6zM50,52h6v4h-6zM58,52h6v4h-6z"
+            android:fillColor="#FFFFFF"/>
+        <path
+            android:pathData="M46,59h12v4h-12z"
+            android:fillColor="#FFFFFF"/>
+    </group>
+</vector>

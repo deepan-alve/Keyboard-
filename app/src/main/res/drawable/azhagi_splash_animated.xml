@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="108dp"
+            android:height="108dp"
+            android:viewportWidth="108"
+            android:viewportHeight="108">
+            
+            <!-- Modern keyboard icon design -->
+            <group android:name="keyboard_group">
+                <!-- Background rounded rectangle -->
+                <path
+                    android:name="background"
+                    android:pathData="M30,35 L78,35 Q82,35 82,39 L82,69 Q82,73 78,73 L30,73 Q26,73 26,69 L26,39 Q26,35 30,35 Z"
+                    android:fillColor="#FF4CAF50"
+                    android:fillAlpha="0.9"/>
+                
+                <!-- Top row keys -->
+                <path
+                    android:name="key_row1"
+                    android:pathData="M33,42h6v4h-6z M42,42h6v4h-6z M51,42h6v4h-6z M60,42h6v4h-6z M69,42h6v4h-6z"
+                    android:fillColor="#FFFFFF"/>
+                
+                <!-- Middle row keys -->
+                <path
+                    android:name="key_row2"
+                    android:pathData="M33,49h6v4h-6z M42,49h6v4h-6z M51,49h6v4h-6z M60,49h6v4h-6z M69,49h6v4h-6z"
+                    android:fillColor="#FFFFFF"/>
+                
+                <!-- Bottom row keys -->
+                <path
+                    android:name="key_row3"
+                    android:pathData="M33,56h6v4h-6z M42,56h6v4h-6z M51,56h6v4h-6z M60,56h6v4h-6z M69,56h6v4h-6z"
+                    android:fillColor="#FFFFFF"/>
+                
+                <!-- Space bar -->
+                <path
+                    android:name="spacebar"
+                    android:pathData="M39,63h30v4h-30z"
+                    android:fillColor="#FFFFFF"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    
+    <!-- Animation: fade in effect -->
+    <target android:name="keyboard_group">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="alpha"
+                android:duration="800"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
