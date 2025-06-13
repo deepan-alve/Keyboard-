@@ -167,4 +167,3 @@ object SnyggNoValue : SnyggValue, SnyggValueEncoder {
 
     override fun encoder() = this
 }
-
