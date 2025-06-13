@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022-2025 The FlorisBoard Contributors
+ * Copyright (C) 2022-2025 The AzhagiKeys Contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ val projectVersionNameSuffix = projectVersionName.substringAfter("-", "").let { 
 }
 
 android {
-    namespace = "dev.patrickgold.florisboard"
+    namespace = "com.azhagi.azhagikeys"
     compileSdk = projectCompileSdk.toInt()
     buildToolsVersion = projectBuildToolsVersion
     ndkVersion = projectNdkVersion
@@ -61,7 +61,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "dev.patrickgold.florisboard"
+        applicationId = "com.azhagi.azhagikeys"
         minSdk = projectMinSdk.toInt()
         targetSdk = projectTargetSdk.toInt()
         versionCode = projectVersionCode.toInt()
@@ -116,7 +116,7 @@ android {
             resValue("mipmap", "floris_app_icon", "@mipmap/ic_app_icon_debug")
             resValue("mipmap", "floris_app_icon_round", "@mipmap/ic_app_icon_debug_round")
             resValue("drawable", "floris_app_icon_foreground", "@drawable/ic_app_icon_debug_foreground")
-            resValue("string", "floris_app_name", "FlorisBoard Debug")
+            resValue("string", "floris_app_name", "AzhagiKeys Debug")
         }
 
         create("beta") {
@@ -130,7 +130,7 @@ android {
             resValue("mipmap", "floris_app_icon", "@mipmap/ic_app_icon_beta")
             resValue("mipmap", "floris_app_icon_round", "@mipmap/ic_app_icon_beta_round")
             resValue("drawable", "floris_app_icon_foreground", "@drawable/ic_app_icon_beta_foreground")
-            resValue("string", "floris_app_name", "FlorisBoard Beta")
+            resValue("string", "floris_app_name", "AzhagiKeys Beta")
         }
 
         named("release") {

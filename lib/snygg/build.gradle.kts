@@ -1,7 +1,7 @@
-import org.gradle.api.tasks.testing.logging.TestLogEvent
+﻿import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 /*
- * Copyright (C) 2025 The FlorisBoard Contributors
+ * Copyright (C) 2025 The AzhagiKeys Contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ val projectMinSdk: String by project
 val projectCompileSdk: String by project
 
 android {
-    namespace = "org.florisboard.lib.snygg"
+    namespace = "org.azhagi.lib.snygg"
     compileSdk = projectCompileSdk.toInt()
 
     defaultConfig {
@@ -104,7 +104,7 @@ dependencies {
 
 tasks.register<JavaExec>("generateJsonSchema") {
     dependsOn("build")
-    mainClass.set("org.florisboard.lib.snygg.SnyggJsonSchemaGenerator")
+    mainClass.set("org.azhagi.lib.snygg.SnyggJsonSchemaGenerator")
     val debugVariant = android.libraryVariants.first { it.name == "debug" }
     classpath = files(
         debugVariant.javaCompileProvider.get().classpath.map { it.absolutePath },
@@ -115,3 +115,4 @@ tasks.register<JavaExec>("generateJsonSchema") {
 }
 
 tasks["build"].finalizedBy("generateJsonSchema")
+
