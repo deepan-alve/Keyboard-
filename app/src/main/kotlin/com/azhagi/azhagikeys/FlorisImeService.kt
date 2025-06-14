@@ -270,7 +270,7 @@ class AzhagiImeService : LifecycleInputMethodService() {
     private val wallpaperChangeReceiver = WallpaperChangeReceiver()
 
     init {
-        setTheme(R.style.FlorisImeTheme)
+        setTheme(R.style.AzhagiImeTheme)
     }
 
     override fun onCreate() {

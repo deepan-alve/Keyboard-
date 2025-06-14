@@ -1,7 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">AzhagiKeys</string>
     <string name="azhagi_app_name">AzhagiKeys</string>
-    <string name="floris_app_name">AzhagiKeys</string>
 
     <string name="key__phone_pause" comment="Label for the Pause key in the telephone keyboard layout">Pause</string>
     <string name="key__phone_wait" comment="Label for the Wait key in the telephone keyboard layout">Wait</string>
@@ -202,7 +201,7 @@
     <string name="settings__theme_editor__code_recording_help_text">To find the code of a key, use the button besides the code input field. Once activated, it will record the next key press and will insert the code into the input field.</string>
     <string name="settings__theme_editor__code_recording_started">Key code recording started</string>
     <string name="settings__theme_editor__code_recording_stopped">Key code recording stopped</string>
-    <string name="settings__theme_editor__code_recording_requires_default_ime_floris">{app_name} needs to be the default keyboard to record a key code</string>
+    <string name="settings__theme_editor__code_recording_requires_default_ime_azhagi">{app_name} needs to be the default keyboard to record a key code</string>
     <string name="settings__theme_editor__code_recording_placeholder">Recording…</string>
     <string name="settings__theme_editor__add_property">Add property</string>
     <string name="settings__theme_editor__edit_property">Edit property</string>
@@ -499,10 +498,9 @@
     <string name="pref__dictionary__manage_system_user_dictionary__label" comment="Preference title">Manage system user dictionary</string>
     <string name="pref__dictionary__manage_system_user_dictionary__summary" comment="Preference summary">Add, view, and remove entries for the system user dictionary</string>
     <string name="pref__dictionary__enable_internal_user_dictionary__label" comment="Preference title">Enable internal user dictionary</string>
-    <string name="pref__dictionary__enable_internal_user_dictionary__summary" comment="Preference summary">Suggest words stored in the internal user dictionary</string>
-    <string name="pref__dictionary__manage_floris_user_dictionary__label" comment="Preference title">Manage internal user dictionary</string>
-    <string name="pref__dictionary__manage_floris_user_dictionary__summary" comment="Preference summary">Add, view, and remove entries for the internal user dictionary</string>
-    <string name="settings__udm__title_floris" comment="Title of the User Dictionary Manager activity for internal">Internal User Dictionary</string>
+    <string name="pref__dictionary__enable_internal_user_dictionary__summary" comment="Preference summary">Suggest words stored in the internal user dictionary</string>    <string name="pref__dictionary__manage_azhagi_user_dictionary__label" comment="Preference title">Manage internal user dictionary</string>
+    <string name="pref__dictionary__manage_azhagi_user_dictionary__summary" comment="Preference summary">Add, view, and remove entries for the internal user dictionary</string>
+    <string name="settings__udm__title_azhagi" comment="Title of the User Dictionary Manager activity for internal">Internal User Dictionary</string>
     <string name="settings__udm__title_system" comment="Title of the User Dictionary Manager activity for system">System User Dictionary</string>
     <string name="settings__udm__no_words_in_dictionary" comment="String to show if no words are present in the dictionary">This user dictionary does not contain any words.</string>
     <string name="settings__udm__word_summary_freq" comment="Summary label for a word entry. The decimal placeholder inserts the frequency for the word it summarizes.">Frequency: {freq}</string>
@@ -696,7 +694,7 @@
     <string name="pref__clipboard__sync_from_system_clipboard__label">Sync from system clipboard</string>
     <string name="pref__clipboard__sync_from_system_clipboard__summary">System clipboard updates also update Azhagi clipboard</string>
     <string name="pref__clipboard__sync_to_system_clipboard__label">Sync to system clipboard</string>
-    <string name="pref__clipboard__sync_to_system_clipboard__summary">Floris clipboard updates also update system clipboard</string>
+    <string name="pref__clipboard__sync_to_system_clipboard__summary">Azhagi clipboard updates also update system clipboard</string>
     <string name="pref__clipboard__group_clipboard_suggestion__label">Clipboard suggestions</string>
     <string name="pref__clipboard__suggestion_enabled__label" comment="Preference title">Clipboard content suggestions</string>
     <string name="pref__clipboard__suggestion_enabled__summary" comment="Preference summary">Suggest previously copied clipboard content</string>

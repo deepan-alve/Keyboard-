@@ -8,9 +8,9 @@
     <!-- Permission needed to create notifications on devices running Android 13+ -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
-    <!-- Android 11+ only: Define that FlorisBoard requests to see all apps that
+    <!-- Android 11+ only: Define that AzhagiKeys requests to see all apps that
           ship with an IME or Spell Check service. This is used to guide the user
-          in the Settings Ui why FlorisBoard may not be working.
+          in the Settings Ui why AzhagiKeys may not be working.
      -->
     <queries>
         <intent>
@@ -26,12 +26,12 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/backup_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/floris_app_icon"
-        android:label="@string/floris_app_name"
+        android:icon="@mipmap/azhagi_app_icon"
+        android:label="@string/azhagi_app_name"
         android:enableOnBackInvokedCallback="true"
-        android:roundIcon="@mipmap/floris_app_icon_round"
+        android:roundIcon="@mipmap/azhagi_app_icon_round"
         android:supportsRtl="true"
-        android:theme="@style/FlorisAppTheme"
+        android:theme="@style/AzhagiAppTheme"
         tools:targetApi="tiramisu">
 
         <!-- Allow app to be profiled for benchmarking and baseline profile generation -->
@@ -40,7 +40,7 @@
         <!-- IME service -->
         <service
             android:name="com.azhagi.azhagikeys.AzhagiImeService"
-            android:label="@string/floris_app_name"
+            android:label="@string/azhagi_app_name"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:directBootAware="true"
             android:exported="true">
@@ -53,7 +53,7 @@
         <!-- Spellchecker service -->
         <service
             android:name="com.azhagi.azhagikeys.AzhagiSpellCheckerService"
-            android:label="@string/floris_app_name"
+            android:label="@string/azhagi_app_name"
             android:permission="android.permission.BIND_TEXT_SERVICE"
             android:exported="true">
             <intent-filter>
@@ -65,30 +65,30 @@
         <!-- Main App Activity -->
         <activity
             android:name="com.azhagi.azhagikeys.app.AzhagiAppActivity"
-            android:icon="@mipmap/floris_app_icon"
+            android:icon="@mipmap/azhagi_app_icon"
             android:label="@string/settings__title"
             android:launchMode="singleTask"
-            android:roundIcon="@mipmap/floris_app_icon_round"
+            android:roundIcon="@mipmap/azhagi_app_icon_round"
             android:windowSoftInputMode="adjustResize"
-            android:theme="@style/FlorisAppTheme.Splash"
+            android:theme="@style/AzhagiAppTheme.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="ui" android:host="florisboard" android:pathPrefix="/" />
+                <data android:scheme="ui" android:host="azhagikeys" android:pathPrefix="/" />
             </intent-filter>
             <intent-filter android:label="Import Extension">
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:scheme="content"/>
-                <data android:mimeType="application/vnd.florisboard.extension+zip"/>
+                <data android:mimeType="application/vnd.azhagikeys.extension+zip"/>
                 <data android:mimeType="application/octet-stream"/><!-- Firefox looking at you :eyes: -->
             </intent-filter>
             <intent-filter android:label="Import Extension">
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="application/vnd.florisboard.extension+zip"/>
+                <data android:mimeType="application/vnd.azhagikeys.extension+zip"/>
                 <data android:mimeType="application/octet-stream"/><!-- Firefox looking at you :eyes: -->
             </intent-filter>
         </activity>
@@ -96,12 +96,12 @@
         <!-- Using an activity alias to disable/enable the app icon in the launcher -->
         <activity-alias
             android:name="com.azhagi.azhagikeys.SettingsLauncherAlias"
-            android:icon="@mipmap/floris_app_icon"
-            android:label="@string/floris_app_name"
+            android:icon="@mipmap/azhagi_app_icon"
+            android:label="@string/azhagi_app_name"
             android:launchMode="singleTask"
-            android:roundIcon="@mipmap/floris_app_icon_round"
+            android:roundIcon="@mipmap/azhagi_app_icon_round"
             android:targetActivity="com.azhagi.azhagikeys.app.AzhagiAppActivity"
-            android:theme="@style/FlorisAppTheme.Splash"
+            android:theme="@style/AzhagiAppTheme.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -112,7 +112,7 @@
         <!-- Crash Dialog Activity -->
         <activity
             android:name="com.azhagi.azhagikeys.lib.crashutility.CrashDialogActivity"
-            android:icon="@mipmap/floris_app_icon"
+            android:icon="@mipmap/azhagi_app_icon"
             android:label="@string/crash_dialog__title"
             android:configChanges="orientation|screenSize"
             android:theme="@style/CrashDialogTheme"/>
@@ -120,7 +120,7 @@
         <!-- Copy to Clipboard Activity -->
         <activity
             android:name="com.azhagi.azhagikeys.ime.clipboard.AzhagiCopyToClipboardActivity"
-            android:theme="@style/FlorisAppTheme.Transparent"
+            android:theme="@style/AzhagiAppTheme.Transparent"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SEND"/>
